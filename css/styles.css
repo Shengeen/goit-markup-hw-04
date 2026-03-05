@@ -73,6 +73,7 @@ img {
 
 /* #region header */
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header > .container {
   display: flex;
@@ -114,25 +115,25 @@ img {
   width: 100%;
   height: 4px;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
-.header-adress {
+.header-address {
   margin-left: auto;
 }
-.adress-list {
+.address-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.adress-item {
+.address-item {
 }
-.adress-link {
+.address-link {
   display: block;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-link:hover,
-.adress-link:focus {
+.address-link:hover,
+.address-link:focus {
   color: #404bbf;
 }
 /* #endregion */
@@ -177,6 +178,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .main-title {
   font-weight: 700;
@@ -199,6 +202,7 @@ img {
   margin: 0 auto;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -218,11 +222,14 @@ img {
   gap: 24px;
 }
 .future-item {
-  width: 264px;
 }
 .future-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f4f4fd;
-  padding: 24px 100px;
+  width: 264px;
+  height: 112px;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -230,7 +237,6 @@ img {
 .future-icon {
 }
 .future-item-title {
-  display: flex;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -323,7 +329,7 @@ img {
   gap: 24px;
 }
 .portfolio-list-item {
-  width: calc((100%-48px) \3);
+  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-img {
@@ -383,6 +389,7 @@ img {
 .container-footer {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .footer-text {
   color: #f4f4fd;
@@ -416,7 +423,7 @@ img {
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 .footer-socials-icon {
   fill: #f4f4fd;

@@ -60,7 +60,7 @@ a {
 button {
   padding: 0;
   border: 1px solid transparent;
-  background-color: none;
+  background-color: transparent;
   cursor: pointer;
 }
 address {
@@ -224,7 +224,6 @@ img {
 }
 .future-list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
 }
 .future-item {
